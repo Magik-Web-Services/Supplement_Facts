@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-color: hsl(0deg 0.58% 66.08%);
+}
+
+section {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.outer-container {
+    max-width: 889px;
+    min-height: 492px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 8px;
+}
+#container {
+    display: flex;
+}
+
+.left {
+    max-width: 338px;
+}
+
+table {
+    border: 2px solid var(--border-color);
+    font-weight: 600;
+}
+
+.padtop {
+    padding-top: 2px;
+}
+
+table tr {
+    line-height: 15px;
+}
+
+table tr td .line15 {
+    height: 15px;
+    background-color: black;
+    position: relative;
+    top: 6px;
+}
+
+table tr td .line10 {
+    height: 7px;
+    background-color: black;
+}
+
+table tr td .line13 {
+    height: 13px;
+    background-color: black;
+}
+
+table tr th h1 {
+    min-width: 330px;
+    font-size: 33px;
+    font-weight: bolder;
+    position: relative;
+    top: 5px;
+    font-family: arial;
+    line-height: 20px;
+    padding-bottom: 10px;
+}
+
+table tr td h3 {
+    font-size: 13.3px;
+    font-weight: 600;
+    line-height: 13px;
+    font-family: arial;
+    position: relative;
+    top: 8px;
+}
+
+table .table-right {
+    margin-right: 2px;
+    display: flex;
+    margin-left: auto;
+    align-items: end;
+    justify-content: space-between;
+    position: relative;
+    top: 3px;
+}
+
+table .table-right .table-right-one {
+    margin-left: 19em;
+    max-width: 70px;
+}
+
+table .table-right td {
+    font-size: 10.5px;
+    font-weight: bolder;
+    line-height: 10px;
+    text-align: center;
+    font-family: arial;
+}
+
+table .table-3-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 11px;
+    font-family: arial;
+    font-weight: 600;
+    padding-bottom: 1px;
+}
+
+/* three Column */
+table .table-3-row .table-3-row-one {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+table .table-3-row .table-3-row-two {
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+table .table-3-row .table-3-row-three {
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+}
+table .table-3-row .table-3-row-three1 {
+    text-align: right;
+    font-size: 12px;
+    padding-right: 3px;
+    font-weight: 700;
+}
+
+table .table-3-row .table-3-row-threeD {
+    min-width: 40px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+.table-footer {
+    font-size: 13px;
+    position: relative;
+    bottom: 2px;
+}
+
+table .table-left-center {
+    padding: 0 12px;
+    line-height: 13px;
+}
+
+table .table-left-center p {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.table-bottom {
+    max-width: 85%;
+    padding: 6px 3px;
+}
+
+.table-bottom-one {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 3fr 5fr;
+}
+
+.table-bottom-one .table-bottom-one-heading {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+.table-bottom-one .table-bottom-one-para {
+    font-size: 13px;
+}
+.table-bottom-one-center-left {
+    font-size: 13px;
+}
+
+.table-bottom-two {
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+}
+
+.table-bottom-two .table-bottom-two-heading {
+    font-size: 13px;
+    font-weight: bolder;
+}
+.table-bottom-two .table-bottom-two-para {
+    font-size: 13px;
+}
+
+.right {
+    background-image: url("../imges/desktop.jpg");
+    min-width: 55%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.img-con {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 10px;
+}
+
+.img-con figure {
+    text-align: center;
+}
+
+.img-con figure img {
+    max-height: 140px;
+}
+
+.img-con figure figcaption {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 4px;
+}
+
+.img-con figure p {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 15px;
+    margin: 0 auto;
+    width: 130px;
+}
+
+@media screen and (max-width: 770px) {
+    .left {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    section {
+        padding: 0;
+    }
+    #container {
+        flex-direction: column-reverse;
+    }
+
+    table {
+        min-width: 100%;
+    }
+    table tr th h1 {
+        padding-bottom: 2px;
+    }
+
+    table tr th h1 {
+        min-width: 260px;
+        font-size: 26.35px;
+    }
+
+    table .table-3-row .table-3-row-one {
+        min-width: 183px;
+        font-size: 11px;
+    }
+
+    table .table-3-row .table-3-row-three {
+        font-size: 11px;
+    }
+    table .table-3-row .table-3-row-three1 {
+        font-size: 11px;
+    }
+
+    table .table-3-row .table-3-row-threeD {
+        font-size: 11px;
+    }
+
+    table .table-left-center p {
+        font-size: 12px;
+    }
+
+    table .table-right td {
+        font-size: 11px;
+    }
+
+    table .table-3-row .table-3-row-two {
+        font-size: 11px;
+    }
+    .table-bottom-one {
+        grid-template-columns: 1fr 5fr;
+    }
+    .table-bottom-one .table-bottom-one-heading {
+        min-width: 105px;
+    }
+    .table-bottom {
+        font-size: 10px;
+        max-width: 90%;
+    }
+
+    .table-bottom-two {
+        grid-template-columns: 1fr 15fr;
+    }
+
+    .table-bottom .table-bottom-para {
+        font-size: 13px;
+    }
+
+    .right {
+        background-image: url("../imges/mobile.jpg");
+        min-height: 10em;
+        background-position: bottom;
+    }
+    .img-con {
+        display: grid;
+    }
+
+    .img-con figure figcaption {
+        font-size: 15px;
+    }
+
+    .img-con figure p {
+        font-size: 12px;
+        width: 100px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .img-con figure img {
+        max-width: 90px;
+        max-height: 78px;
+    }
+}
